@@ -41,12 +41,14 @@ $$P(X_0 = i_0, X_1 = i_1 ... ,X_k = i_k) = P_0(i_0) \prod_{j=1}^{k}{P(i_{j-1}, i
 
 # Continuous-Time Markov Chain (CTMC)
 - Markov Property: $P(X_{t+s} = y \| X_u, u \leq t) = P(X_{t+s} = y \| X_t)$
-  - Note: continuous time is significant more difficult, the TPF now has to capture the time aspect
+  - Note: continuous time is significant more difficult, the TPF now has to capture state changes with respect to time 
 - Transition Probability
   - $P_{s,t}(x,y) = P(X_t = y \| X_s =x)$ 
   - Under time-homogeneous assumption
-    - $P_{s,t}(x,y) = P_{0,t-s}(x,y) = P_{t-s}(x,y)$ by stationary independent increment property
-
+    - $P_{s,t}(x,y) = P_{0,t-s}(x,y) = P_{t-s}(x,y)$ by stationary independent increment property of poisson process
+    1. $ P_t(x,y) \geq 0, t \geq 0, \forall x, y$
+    2. $ \sum_y{P_t(x,y)} = 1, t \geq 0, x \in S$
+    3. $ P_{t+s}(x,y) = \sum_z{P_t(x,z) P_s(z,y)}$, Chapman Kolmogrorov Eq.
 
 # Regnerative Process
 
