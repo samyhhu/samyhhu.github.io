@@ -3,4 +3,4 @@ layout: page
 title: About
 permalink: /about/
 ---
-Hu's interest: Machine Learning, Adaptive Signal Processing, CryptoCurrency, Finance 
+Interests: Machine Learning, Signal Processing, CryptoCurrency, Finance
